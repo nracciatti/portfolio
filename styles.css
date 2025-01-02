@@ -265,6 +265,7 @@ h2 {
   background-color: var(--accent-color);
 }
 
+
 .contact-form {
   display: grid;
   gap: 1rem;
@@ -327,7 +328,7 @@ footer span {
 }
 
 .social-links a {
-  color: red;
+  color: var(--text-color);
   margin-left: 1rem;
   transition: color 0.3s ease;
 }
