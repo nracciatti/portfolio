@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolas Racciatti - Desarrollador Web</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo">Nicolas Racciatti</a>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-content">
+          <h1 class="scroll-reveal">
+            Hola, soy <span class="highlight">Nicolas Racciatti</span>
+          </h1>
+          <p class="subtitle scroll-reveal">Desarrollador Web en formación.</p>
+          <a href="#contacto" class="cta-button scroll-reveal">Contáctame</a>
+        </div>
+      </section>
+
+      <section id="sobre-mi">
+        <div class="container">
+          <h2 class="scroll-reveal">Sobre Mí</h2>
+          <div class="about-content">
+            <div class="about-text scroll-reveal">
+              <p>
+                Soy un estudiante de Desarrollo Web Full-Stack con un fuerte
+                deseo de aprender y crecer en el campo de la tecnología. Mi
+                objetivo es crear experiencias web innovadoras y funcionales que
+                marquen la diferencia.
+              </p>
+              <p>
+                Actualmente, estoy enfocado en mejorar mis habilidades en HTML,
+                CSS, Python, Javascript, React y el uso de herramientas como
+                GitHub y Vercel. Busco constantemente nuevos desafíos y
+                oportunidades para expandir mis conocimientos.
+              </p>
+            </div>
+            <div class="about-image scroll-reveal">
+              <img src="./img/yo.jpeg" alt="Yo :D" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades">
+        <div class="container">
+          <h2 class="scroll-reveal">Mis Habilidades</h2>
+          <div class="skills-container">
+            <div class="skill scroll-reveal">
+              <i data-feather="code"></i>
+              <span>HTML</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill scroll-reveal">
+              <i data-feather="layout"></i>
+              <span>CSS</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill scroll-reveal">
+              <i data-feather="terminal"></i>
+              <span>Python</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill scroll-reveal">
+              <i data-feather="terminal"></i>
+              <span>Javascript</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill scroll-reveal">
+              <i data-feather="github"></i>
+              <span>GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="skill scroll-reveal">
+              <i data-feather="cloud"></i>
+              <span>Vercel</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos">
+        <div class="container">
+          <h2 class="scroll-reveal">Proyectos Destacados</h2>
+          <div class="projects-grid">
+            <div class="project-card scroll-reveal">
+              <img src="./img/el_dorado_pesca.png" alt="El Dorado Pesca" />
+              <h3>"El Dorado Pesca"</h3>
+              <p>
+                El Dorado Pesca es una Landing Page, desarrollada para
+                excursiones de Pesca. Cuenta con varias secciones y Login.
+              </p>
+              <a href="https://eldoradopesca.vercel.app/" class="project-link"
+                >Ver proyecto</a
+              >
+            </div>
+            <div class="project-card scroll-reveal">
+              <img
+                src="./img/albius_racing.png"
+                alt="Albius Racing"
+              />
+              <h3>Albius Racing</h3>
+              <p>
+                Albius Racing es una Landing Page de una empresa dedicada a la
+                mejora de rendimiento de autos.
+              </p>
+              <a href="https://albius-racing-black.vercel.app/" class="project-link">Ver proyecto</a>
+            </div>
+            <div class="project-card scroll-reveal">
+              <img
+                src="./img/weather_app.png"
+                alt="Proyecto 3"
+              />
+              <h3>Weather App</h3>
+              <p>Aplicación de clima utilizando una API.</p>
+              <a href="https://weather-app-puce-rho.vercel.app/" class="project-link">Ver proyecto</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <div class="container">
+          <h2 class="scroll-reveal">Contacto</h2>
+          <p class="scroll-reveal">
+            ¿Interesado en colaborar o tenes alguna pregunta? ¡Contáctame!
+          </p>
+          <form class="contact-form scroll-reveal">
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit" class="submit-button">Enviar Mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">Nicolas Racciatti</div>
+          <div class="social-links">
+            <a href="https://github.com/nracciatti" aria-label="GitHub"><i data-feather="github">github</i></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i data-feather="linkedin"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
+          </div>
+        </div>
+        <p>&copy; 2025 <span>Nicolas Racciatti</span>. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
