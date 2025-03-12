@@ -3,198 +3,356 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nicolas Racciatti - Desarrollador Web</title>
+    <title>Nicolas Racciatti | Web Developer</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="container">
-          <a href="#" class="logo">Nicolas Racciatti</a>
-          <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-          <ul class="nav-menu">
-            <li><a href="#inicio" class="nav-link">Inicio</a></li>
-            <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
-            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-            <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-            <li><a href="#contacto" class="nav-link">Contacto</a></li>
-          </ul>
+    <!-- Contenedor de las olas -->
+    <div class="animated-background">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Nico's Portfolio</a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </nav>
-    </header>
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <main>
-      <section id="inicio" class="hero">
+    <section id="inicio" class="hero">
+      <div class="container">
         <div class="hero-content">
-          <h1 class="scroll-reveal">
-            Hola, soy <span class="highlight">Nicolas Racciatti</span>
-          </h1>
-          <p class="subtitle scroll-reveal">Desarrollador Web en formación.</p>
-          <a href="#contacto" class="cta-button scroll-reveal">Contáctame</a>
-        </div>
-      </section>
-
-      <section id="sobre-mi">
-        <div class="container">
-          <h2 class="scroll-reveal">Sobre Mí</h2>
-          <div class="about-content">
-            <div class="about-text scroll-reveal">
-              <p>
-                Soy un estudiante de Desarrollo Web Full-Stack con un fuerte
-                deseo de aprender y crecer en el campo de la tecnología. Mi
-                objetivo es crear experiencias web innovadoras y funcionales que
-                marquen la diferencia.
-              </p>
-              <p>
-                Actualmente, estoy enfocado en mejorar mis habilidades en HTML,
-                CSS, Python, Javascript, React y el uso de herramientas como
-                GitHub y Vercel. Busco constantemente nuevos desafíos y
-                oportunidades para expandir mis conocimientos.
-              </p>
-            </div>
-            <div class="about-image scroll-reveal">
-              <img src="./img/yo.jpeg" alt="Yo :D" />
-            </div>
+          <h1>Hola, soy <span class="highlight">Nicolas Racciatti</span></h1>
+          <p class="subtitle">Desarrollador Web en formación</p>
+          <div class="hero-buttons">
+            <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+            <a href="#contacto" class="btn btn-secondary">Contacto</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="habilidades">
-        <div class="container">
-          <h2 class="scroll-reveal">Mis Habilidades</h2>
-          <div class="skills-container">
-            <div class="skill scroll-reveal">
-              <i data-feather="code"></i>
-              <span>HTML</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 80%"></div>
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="./img/yo.jpeg" alt="Mi foto" />
+          </div>
+          <div class="about-text">
+            <h3>Desarrollador Web</h3>
+            <p>
+              Soy un estudiante de Desarrollo Web Full-Stack con un fuerte deseo
+              de aprender y crecer en el campo de la tecnología. Mi objetivo es
+              crear experiencias web innovadoras y funcionales que marquen la
+              diferencia.
+            </p>
+            <p>
+              Actualmente, estoy enfocado en mejorar mis habilidades en HTML,
+              CSS, Python, Javascript, React y el uso de herramientas como
+              GitHub y Vercel. Busco constantemente nuevos desafíos y
+              oportunidades para expandir mis conocimientos.
+            </p>
+            <div class="personal-info">
+              <div class="info-item">
+                <i class="fas fa-user"></i>
+                <span>Nicolas Racciatti</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>nicoracciatti1@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Buenos Aires, Argentina</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Desarrollador Web en formación</span>
               </div>
             </div>
-            <div class="skill scroll-reveal">
-              <i data-feather="layout"></i>
-              <span>CSS</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 75%"></div>
-              </div>
+            <a href="assets/cv_nicolasRacciatti.pdf" class="btn btn-primary" download>Descargar CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Mis Habilidades</h2>
+        <div class="skills-container">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
             </div>
-            <div class="skill scroll-reveal">
-              <i data-feather="terminal"></i>
-              <span>Python</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 70%"></div>
-              </div>
+            <h3>HTML</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="75%"></div>
             </div>
-            <div class="skill scroll-reveal">
-              <i data-feather="terminal"></i>
-              <span>Javascript</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 70%"></div>
-              </div>
+            <p>75%</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
             </div>
-            <div class="skill scroll-reveal">
-              <i data-feather="github"></i>
-              <span>GitHub</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 65%"></div>
-              </div>
+            <h3>CSS</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="65%"></div>
             </div>
-            <div class="skill scroll-reveal">
-              <i data-feather="cloud"></i>
-              <span>Vercel</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 60%"></div>
+            <p>65%</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="50%"></div>
+            </div>
+            <p>50%</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <h3>Python</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="60%"></div>
+            </div>
+            <p>60%</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <h3>GitHub</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="70%"></div>
+            </div>
+            <p>70%</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Responsive Design</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="65%"></div>
+            </div>
+            <p>65%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2 class="section-title">Mis Proyectos</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./img/swellpro.png" alt="swell pro" />
+            </div>
+            <div class="project-info">
+              <h3>Swell Pro Argentina</h3>
+              <p>
+                Pagina web desarrollada para un cliente de importación de
+                drones.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://www.swellpro.com.ar/"
+                  target="_blank"
+                  class="btn btn-sm"
+                  >Ver Demo</a
+                >
+                <a
+                  href="https://github.com/nracciatti/swellProArgentina "
+                  target="_blank"
+                  class="btn btn-sm btn-secondary"
+                  >Ver Código</a
+                >
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="proyectos">
-        <div class="container">
-          <h2 class="scroll-reveal">Proyectos Destacados</h2>
-          <div class="projects-grid">
-            <div class="project-card scroll-reveal">
-              <img src="./img/el_dorado_pesca.png" alt="El Dorado Pesca" />
-              <h3>"El Dorado Pesca"</h3>
-              <p>
-                El Dorado Pesca es una Landing Page, desarrollada para
-                excursiones de Pesca. Cuenta con varias secciones y Login.
-              </p>
-              <a href="https://eldoradopesca.vercel.app/" class="project-link"
-                >Ver proyecto</a
-              >
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./img/weather_app.png" alt="weather app" />
             </div>
-            <div class="project-card scroll-reveal">
-              <img src="./img/albius_racing.png" alt="Albius Racing" />
-              <h3>Albius Racing</h3>
-              <p>
-                Albius Racing es una Landing Page de una empresa dedicada a la
-                mejora de rendimiento de autos.
-              </p>
-              <a
-                href="https://albius-racing-black.vercel.app/"
-                class="project-link"
-                >Ver proyecto</a
-              >
-            </div>
-            <div class="project-card scroll-reveal">
-              <img src="./img/weather_app.png" alt="Weather App" />
+            <div class="project-info">
               <h3>Weather App</h3>
-              <p>Aplicación de clima utilizando una API.</p>
-              <a
-                href="https://weather-app-puce-rho.vercel.app/"
-                class="project-link"
-                >Ver proyecto</a
-              >
+              <p>Aplicación de clima funcional.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://weather-app-puce-rho.vercel.app/"
+                  class="btn btn-sm"
+                  >Ver Demo</a
+                >
+                <a
+                  href="https://github.com/nracciatti/weatherApp"
+                  class="btn btn-sm btn-secondary"
+                  >Ver Código</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                alt="Proyecto 3"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Lista de Tareas</h3>
+              <p>
+                Una aplicación de lista de tareas que permite añadir, eliminar y
+                marcar tareas como completadas.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm">Ver Demo</a>
+                <a href="#" class="btn btn-sm btn-secondary">Ver Código</a>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contacto">
-        <div class="container">
-          <h2 class="scroll-reveal">Contacto</h2>
-          <p class="scroll-reveal">
-            ¿Interesado en colaborar o tenes alguna pregunta? ¡Contáctame!
-          </p>
-          <form class="contact-form scroll-reveal">
-            <input type="text" placeholder="Nombre" required />
-            <input type="email" placeholder="Email" required />
-            <textarea placeholder="Mensaje" required></textarea>
-            <button type="submit" class="submit-button">Enviar Mensaje</button>
-          </form>
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>nicoracciatti1@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Ubicación</h3>
+                <p>Buenos Aires, Argentina</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Teléfono</h3>
+                <p>+54 11 6584 0991</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/nracciatti"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nicolasracciatti/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contact-form" action="https://formspree.io/f/xvgkolbg" method="POST">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-logo">Nicolas Racciatti</div>
-          <div class="social-links">
-            <a href="https://github.com/nracciatti" aria-label="GitHub"
-              ><i data-feather="github">GitHub</i></a
-            >
-            <a
-              href="https://www.linkedin.com/in/nicolasracciatti/"
-              aria-label="LinkedIn"
-              ><i data-feather="linkedin"></i>Linkedin</a
-            >
+          <p>&copy; 2025 Nicolas Racciatti. Todos los derechos reservados.</p>
+          <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
           </div>
         </div>
-        <p>
-          &copy; 2025 <span>Nicolas Racciatti</span>. Todos los derechos
-          reservados.
-        </p>
       </div>
     </footer>
 
+    <!-- Botón Volver Arriba -->
+    <a href="#" class="back-to-top" id="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
