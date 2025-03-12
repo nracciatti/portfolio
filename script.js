@@ -84,38 +84,42 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Formulario de contacto
+  // Formulario de contacto - Ya no necesitamos este código si usamos Formspree
+  // Pero podemos mantenerlo para mostrar un mensaje de éxito después del envío
   const contactForm = document.getElementById("contact-form");
 
   if (contactForm) {
+    // Añadir un evento para mostrar un mensaje después de que el formulario se envíe
     contactForm.addEventListener("submit", (e) => {
-      e.preventDefault();
+      // No prevenimos el envío del formulario, dejamos que Formspree lo maneje
 
-      // Aquí normalmente iría el código para enviar el formulario
-      // Como es un ejemplo, simplemente mostraremos un mensaje
-
-      // Simulación de envío
+      // Podemos mostrar un mensaje de carga mientras se envía
       const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
-
       submitBtn.textContent = "Enviando...";
       submitBtn.disabled = true;
 
-      setTimeout(() => {
-        // Crear mensaje de éxito
-        const successMessage = document.createElement("div");
-        successMessage.className = "success-message";
-        successMessage.innerHTML = `
-                    <i class="fas fa-check-circle"></i>
-                    <h3>¡Mensaje Enviado!</h3>
-                    <p>Gracias por contactarme. Te responderé lo antes posible.</p>
-                `;
-
-        // Reemplazar el formulario con el mensaje
-        contactForm.innerHTML = "";
-        contactForm.appendChild(successMessage);
-      }, 2000);
+      // Opcional: Podemos guardar el estado del formulario en localStorage
+      // para mostrar un mensaje cuando el usuario regrese después del envío
+      localStorage.setItem("formSubmitted", "true");
     });
+
+    // Verificar si el formulario fue enviado (cuando el usuario regresa de Formspree)
+    if (
+      window.location.search.includes("submitted=true") ||
+      localStorage.getItem("formSubmitted") === "true"
+    ) {
+      // Limpiar el estado
+      localStorage.removeItem("formSubmitted");
+
+      // Mostrar mensaje de éxito
+      contactForm.innerHTML = `
+        <div class="success-message">
+          <i class="fas fa-check-circle"></i>
+          <h3>¡Mensaje Enviado!</h3>
+          <p>Gracias por contactarme. Te responderé lo antes posible.</p>
+        </div>
+      `;
+    }
   }
 
   // Efectos de scroll con ScrollReveal
