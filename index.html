@@ -10,12 +10,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   </head>
   <body>
-    <!-- Contenedor de las olas -->
+    <!-- olas -->
     <div class="animated-background">
       <div class="wave wave1"></div>
       <div class="wave wave2"></div>
@@ -42,7 +43,7 @@
     <section id="inicio" class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>Hola, soy <span class="highlight">Nicolas Racciatti</span></h1>
+          <h1>Hola, soy <span class="highlight"></span></h1>
           <p class="subtitle">Desarrollador Front-End</p>
           <div class="hero-buttons">
             <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
@@ -111,60 +112,48 @@
               <i class="fab fa-html5"></i>
             </div>
             <h3>HTML</h3>
-            <div class="skill-bar">
-              <div class="skill-progress" data-progress="75%"></div>
-            </div>
-            <p>75%</p>
           </div>
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fab fa-css3-alt"></i>
             </div>
             <h3>CSS</h3>
-            <div class="skill-bar">
-              <div class="skill-progress" data-progress="65%"></div>
-            </div>
-            <p>65%</p>
           </div>
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fab fa-js"></i>
             </div>
             <h3>JavaScript</h3>
-            <div class="skill-bar">
-              <div class="skill-progress" data-progress="50%"></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-react"></i>
             </div>
-            <p>50%</p>
+            <h3>React</h3>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3>NextJS</h3>
           </div>
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fab fa-python"></i>
             </div>
             <h3>Python</h3>
-            <div class="skill-bar">
-              <div class="skill-progress" data-progress="60%"></div>
-            </div>
-            <p>60%</p>
           </div>
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fab fa-github"></i>
             </div>
             <h3>GitHub</h3>
-            <div class="skill-bar">
-              <div class="skill-progress" data-progress="70%"></div>
-            </div>
-            <p>70%</p>
           </div>
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fas fa-mobile-alt"></i>
             </div>
             <h3>Responsive Design</h3>
-            <div class="skill-bar">
-              <div class="skill-progress" data-progress="65%"></div>
-            </div>
-            <p>65%</p>
           </div>
         </div>
       </div>
@@ -207,10 +196,7 @@
           </div>
           <div class="project-card">
             <div class="project-image">
-              <img
-                src="./img/breweryApp.png"
-                alt="weather app"
-              />
+              <img src="./img/breweryApp.png" alt="weather app" />
             </div>
             <div class="project-info">
               <h3>Brewery App</h3>
@@ -231,6 +217,35 @@
                 >
                 <a
                   href="https://github.com/nracciatti/brewery-app"
+                  target="_blank"
+                  class="btn btn-sm btn-secondary"
+                  >Ver Código</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./img/futec.png" alt="Futec - Tornería" />
+            </div>
+            <div class="project-info">
+              <h3>Futec Website</h3>
+              <p>Landing Page para empresa de Tornería</p>
+              <div class="project-tags">
+                <span>NextJS</span>
+                <span>React</span>
+                <span>Javascript</span>
+                <span>TailwindCSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://futec-website.vercel.app/"
+                  target="_blank"
+                  class="btn btn-sm"
+                  >Ver Demo</a
+                >
+                <a
+                  href="https://github.com/nracciatti/futec-website"
                   target="_blank"
                   class="btn btn-sm btn-secondary"
                   >Ver Código</a
