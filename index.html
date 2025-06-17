@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="./assets/styles/chatbot.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -58,7 +59,7 @@
         <h2 class="section-title">Sobre Mí</h2>
         <div class="about-content">
           <div class="about-image">
-            <img src="./img/yo.jpeg" alt="Mi foto" />
+            <img src="./assets/img/yo.jpeg" alt="Mi foto" />
           </div>
           <div class="about-text">
             <h3>Desarrollador Front End</h3>
@@ -96,7 +97,7 @@
               </div>
             </div>
             <a
-              href="assets/cv_nicolasRacciatti.pdf"
+              href="assets/cv/nracciatti-f.pdf"
               class="btn btn-primary"
               download
               >Descargar CV</a
@@ -168,7 +169,7 @@
         <div class="projects-container">
           <div class="project-card">
             <div class="project-image">
-              <img src="./img/swellpro.png" alt="swell pro" />
+              <img src="./assets/img/swellpro.png" alt="swell pro" />
             </div>
             <div class="project-info">
               <h3>Swell Pro Argentina</h3>
@@ -199,7 +200,7 @@
           </div>
           <div class="project-card">
             <div class="project-image">
-              <img src="./img/breweryApp.png" alt="weather app" />
+              <img src="./assets/img/breweryApp.png" alt="Brewery App" />
             </div>
             <div class="project-info">
               <h3>Brewery App</h3>
@@ -210,6 +211,7 @@
                 <span>Typescript</span>
                 <span>TailwindCSS</span>
                 <span>Supabase</span>
+                <span>API</span>
               </div>
               <div class="project-links">
                 <a
@@ -229,7 +231,7 @@
           </div>
           <div class="project-card">
             <div class="project-image">
-              <img src="./img/futec.png" alt="Futec - Tornería" />
+              <img src="./assets/img/futec.png" alt="Futec - Tornería" />
             </div>
             <div class="project-info">
               <h3>Futec Website</h3>
@@ -258,8 +260,37 @@
           </div>
           <div class="project-card">
             <div class="project-image">
+              <img src="./assets/img/Captura de pantalla 2025-06-17 a la(s) 6.18.47 p. m..png" alt="TechStore" />
+            </div>
+            <div class="project-info">
+              <h3>TechStore E-Commerce</h3>
+              <p>E-Commerce productos tecnológicos para entrega modulo final de Javascript</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>Javascript</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://tech-store-jet.vercel.app/"
+                  target="_blank"
+                  class="btn btn-sm"
+                  >Ver Demo</a
+                >
+                <a
+                  href="https://github.com/nracciatti/techStore"
+                  target="_blank"
+                  class="btn btn-sm btn-secondary"
+                  >Ver Código</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
               <img
-                src="./img/Captura de pantalla 2025-03-12 a la(s) 4.26.04 p. m..png"
+                src="./assets/img/Captura de pantalla 2025-03-12 a la(s) 4.26.04 p. m..png"
                 alt="Proyecto 3"
               />
             </div>
@@ -387,6 +418,22 @@
       </div>
     </footer>
 
+    <!-- boton chatbot -->
+    <div class="chatbot-fab" id="chatbot-button">
+      <span>💬</span>
+      <div class="tooltip">Haceme preguntas!</div>
+    </div>
+
+    <div id="chatbot-container" class="chatbot-container hidden">
+      <div class="chatbot-header">
+        <h3>Tenes preguntas?</h3>
+        <button id="close-chat" class="close-btn">&times;</button>
+      </div>
+
+      <div id="chat-messages" class="chat-messages"></div>
+
+      <div id="predefined-questions" class="questions-container"></div>
+    </div>
     <!-- Botón Volver Arriba -->
     <a href="#" class="back-to-top" id="back-to-top">
       <i class="fas fa-arrow-up"></i>
@@ -395,5 +442,6 @@
     <!-- JavaScript -->
     <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <script src="script.js"></script>
+    <script src="./assets/js/chatbot.js"></script>
   </body>
 </html>
