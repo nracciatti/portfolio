@@ -26,14 +26,15 @@ let chatState = {
 
 let chatButton, chatContainer, closeButton, chatMessages, questionsContainer;
 
+// iniciar chatbot
 function initChatbot() {
   chatButton = document.getElementById("chatbot-button");
   chatContainer = document.getElementById("chatbot-container");
   closeButton = document.getElementById("close-chat");
   chatMessages = document.getElementById("chat-messages");
-  questionsContainer = document.getElementById("predefined-questions"); // Corregido ID
+  questionsContainer = document.getElementById("predefined-questions");
 
-  chatButton.addEventListener("click", toggleChat); // Eliminado evento duplicado
+  chatButton.addEventListener("click", toggleChat);
   closeButton.addEventListener("click", closeChat);
 
   setTimeout(showToolTipHint, 3000);
